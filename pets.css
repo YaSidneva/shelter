@@ -1,0 +1,347 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: 1s;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-container {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+}
+
+.logo:hover .title {
+  color: #292929;
+}
+
+.title {
+  color: #545454;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.subtitle {
+  color: #292929;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.header-nav {
+  width: 443px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cdcdcd;
+}
+
+.link-start-screen {
+    margin-top: -7px;
+    margin-left: 2px;
+  color: #545454;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  outline: none;
+}
+
+.active {
+  border-bottom: 3px solid #f1cdb3;
+  color: #545454;
+}
+
+.link-start-screen:hover {
+  color: #292929;
+}
+
+.not-only {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-screen-content {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 253px;
+  margin-bottom: 243px;
+}
+
+.pets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  background-size: cover;
+}
+
+.pet-content {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+.cards-container {
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 40px;
+
+}
+
+.card {
+    height: 435px;
+ background-color: #FAFAFA;
+ border-radius: 9px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.friend-img {
+    margin-top: -7.5px;
+}
+
+.card-title {
+    color: #545454;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.06em;
+}
+
+.learn-more {
+    padding: 13px 43px;
+    background: none;
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
+    color: #292929;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+transition: 1s;
+
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .learn-more{
+    cursor: pointer;
+    background-color: #fddcc4;
+  }
+
+  .switch-nav {
+    width: 340px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.switch {
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: unset;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+transition: 1s;
+}  
+
+.inactive {
+    color: #CDCDCD;
+    border-color:  #CDCDCD;
+}
+
+.inactive:hover {
+    cursor: auto;
+}
+
+.switch-active {
+    background-color: #F1CDB3;
+    border-color: #F1CDB3;
+    color: #292929;
+}
+
+.switch-active:hover,
+.paginator:hover {
+    background-color: #FDDCC4;
+}
+
+.paginator {
+    border-color: #F1CDB3;
+    color: #292929;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background-size: cover;
+  }
+  
+  .contacts-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contacts {
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+
+letter-spacing: 0.06em;
+color: #F1CDB3;
+
+  }
+  
+  .contact-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+  }
+  
+  .contact-link {
+    display: flex;
+    align-items: center;
+    color: #f1cdb3;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    color: #fde1cd;
+  }
+  
+  .contact-icon {
+    margin-right: 20px;
+  }
+
+
+  .footer-puppy {
+    margin-top: 42px;
+  }
